@@ -24,7 +24,7 @@ class Transaction {
   @Column('numeric')
   value: number;
 
-  @Column()
+  @Column({ select: false })
   category_id: string;
 
   @OneToOne(() => Category)
