@@ -29,7 +29,7 @@ class TransactionsRepository extends Repository<Transaction> {
       0,
     );
 
-    const balance = {
+    const balance: Balance = {
       income,
       outcome,
       total: income - outcome,
